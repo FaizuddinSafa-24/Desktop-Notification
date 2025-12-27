@@ -1,0 +1,19 @@
+Exception in thread Thread-1 (balloon_tip):
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Array\desktop-notifi\notifi.py", line 12, in <module>
+    time.sleep(60*60)
+    ^^^^
+NameError: name 'time' is not defined. Did you mean: 'title'? Or did you forget to import 'time'?
+Traceback (most recent call last):
+  File "C:\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\plyer\platforms\win\libs\balloontip.py", line 206, in balloon_tip
+    WindowsBalloonTip(**kwargs)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\USER\AppData\Roaming\Python\Python313\site-packages\plyer\platforms\win\libs\balloontip.py", line 130, in __init__
+    raise Exception('Could not load icon {}'.format(app_icon))
+Exception: Could not load icon daily-health-app.png
